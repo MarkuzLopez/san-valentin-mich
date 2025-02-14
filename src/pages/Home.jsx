@@ -109,16 +109,15 @@ export const Home = () => {
                 todo
               </h4>
               <div className="divider"></div>
-              <div className="container-iframe">
-              <iframe                
-                width="100%"
-                height="215"
-                src="https://www.youtube.com/embed/kVLblSH-8aI?si=jBHMWNTq3K4yEHp0?autoplay=1&mute=1"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                // referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+              <div className="container-iframe">                
+                <iframe
+                  width="100%"
+                  height="215"
+                  src="https://www.youtube.com/embed/kVLblSH-8aI?si=jBHMWNTq3K4yEHp0&amp;start=64"
+                  title="For you Michelle"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"                  
+                  allowfullscreen
+                ></iframe>
               </div>
               <div className="divider"></div>
             </section>
