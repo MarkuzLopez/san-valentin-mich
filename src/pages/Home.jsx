@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import cat from "../assets/cat.png";
 import heart from "../assets/heart_icon.png";
 import calendar from "../assets/calendar.png";
-import valenti2 from '../assets/loadcat1.gif';
+import valenti2 from "../assets/loadcat1.gif";
 import "bootstrap/dist/css/bootstrap.min.css";
-import 'animate.css'; // Importa Animate.css
+import "animate.css"; // Importa Animate.css
 import { Carrousel } from "../components/carrousel/Carrousel";
 
 export const Home = () => {
@@ -44,12 +44,12 @@ export const Home = () => {
   }, []);
 
   return (
-    <>    
+    <>
       <div className="loader">
         {isLoading ? (
           <div className="loader-screen">
-            <img  className="loader-valentin"  src={valenti2} alt="Loading..." />
-            <p className="text-center">Esperanding a la aplicacion...</p>            
+            <img className="loader-valentin" src={valenti2} alt="Loading..." />
+            <p className="text-center">Esperanding a la aplicacion...</p>
           </div>
         ) : (
           <main className="main-body animate__animated animate__fadeInUpBig">
@@ -108,6 +108,18 @@ export const Home = () => {
                 presencia de Dios en tu vida. Porque si esta Dios, lo tienesd
                 todo
               </h4>
+              <div className="divider"></div>
+              <div className="container-iframe">
+              <iframe                
+                width="100%"
+                height="215"
+                src="https://www.youtube.com/embed/kVLblSH-8aI?si=jBHMWNTq3K4yEHp0?autoplay=1&mute=1"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                // referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              </div>
               <div className="divider"></div>
             </section>
           </main>
